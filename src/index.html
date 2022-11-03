@@ -8,7 +8,29 @@
     <script type="module" src="./index.js"></script>
   </head>
   <body>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
+    <div class="container">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="searchQuery"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+        <button type="submit" class="search-btn">Search</button>
+      </form>
+      <div class="gallery"></div>
+      <div class="load-more-btn">
+        <button type="button" class="load-more">Load more...</button>
+      </div>
+    </div>
+    <!-- <script src="https://unpkg.com/ionicons@latest/dist/ionicons.js"></script> -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
